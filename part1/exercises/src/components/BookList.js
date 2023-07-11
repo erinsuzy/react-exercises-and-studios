@@ -7,9 +7,9 @@ export default function BookList() {
    return (
       <div>
          <h3>{pageTitle}</h3>
-         <img src={book1} alt="The Guest Room by Tasha Sylva"/> 
-         <img src={book2} alt="The Manor House by Gilly MacMillan" />
-         <img src={book3} alt="A Likeable Woman by May Cobb" />
+         <img src={book1} width="150" height="200" alt="The Guest Room by Tasha Sylva"/> 
+         <img src={book2} width="150" height="200" alt="The Manor House by Gilly MacMillan" />
+         <img src={book3} width="150" height="200" alt="A Likeable Woman by May Cobb" />
       </div>      
    );
 }
