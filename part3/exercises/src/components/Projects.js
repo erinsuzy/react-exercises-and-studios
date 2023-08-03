@@ -1,4 +1,4 @@
-import data from './../data.json';
+import data from './../projects.json';
 import { useState } from 'react';
 
 export default function MyProjects() {
