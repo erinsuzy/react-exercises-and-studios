@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import './../data.json';
+import data from './../data.json';
 
-export default function MyProjects () {
+export default function MyProjects() {
     const [index, setIndex] = useState(0);
 
     function handleClick() {
@@ -9,7 +9,8 @@ export default function MyProjects () {
         {
             setIndex(index + 1);
         }
-        else{
+        else
+        {
             setIndex(0);
         }
     }
@@ -19,13 +20,11 @@ export default function MyProjects () {
 
     return (
         <div>
-            <button onClick={handleClick}>
-                Next
-            </button>
+            <button onClick={handleClick}>Next</button>
             <h2>{project.cacheDifficulty} in {project.park}</h2>
             <img src={project.photoUrl} alt={project.alt} />
         </div>
-    ):
+    );
 
 
 }
